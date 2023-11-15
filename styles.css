@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    background-color: rgb(242, 242, 221);
+}
+
+/*Banner/Nav*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(240, 248, 255);
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: rgb(240, 248, 255);
+}
+
+/*Cantidad de personajes*/
+
+.totalPersonajes{
+    margin-left: 10px;
+}
+
+/*Tarjetas*/
+
+#root{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    width: 95%;
+    margin: 10px 5px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgb(143, 143, 143);
+}
+.card-image{
+    display: block;
+    overflow: hidden;
+}
+.card-image img{
+    width: 100%;
+}
+.card:hover{
+    box-shadow: 15px 15px 5px rgb(126, 126, 126);
+}
+.card-image:hover img{
+    transition: transform 0.5s;
+    transform: scale(1.3);
+    filter: grayscale(90%);
+}
+.card-content{
+    padding: 0 0 3px 8px;
+    box-shadow: 1px 1px 1px rgb(188, 187, 187);
+}
+.card-info a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(5, 5, 249);
+}
+
+/*Paginador*/
+
+.container-paginador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: black;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(240, 248, 255);
+}
+
+/*Móvil/Tablet*/
+
+@media (max-width: 730px){
+    header{
+        justify-content: center;
+    }
+    header ul{
+        display: none;
+    }
+}
