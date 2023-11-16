@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background-color: rgb(242, 242, 221);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*Banner/Nav*/
@@ -11,7 +12,6 @@ header{
     justify-content: space-between;
     padding: 5px 10px;
     background-color: black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(240, 248, 255);
 }
 header ul{
@@ -44,9 +44,13 @@ a{
     width: 95%;
     margin: 10px 5px;
     overflow: hidden;
+    border-radius: 10px;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px rgb(143, 143, 143);
 }
+
+/*Imágen y efecto*/
+
 .card-image{
     display: block;
     overflow: hidden;
@@ -62,10 +66,15 @@ a{
     transform: scale(1.3);
     filter: grayscale(90%);
 }
+/*Info tarjetas*/
+
 .card-content{
     padding: 0 0 3px 8px;
     box-shadow: 1px 1px 1px rgb(188, 187, 187);
 }
+
+/*Ver más*/
+
 .card-info a{
     padding: 10px;
     text-decoration: none;
@@ -93,7 +102,7 @@ footer{
     color: rgb(240, 248, 255);
 }
 
-/*Móvil/Tablet*/
+/*Móvil / Tablet*/
 
 @media (max-width: 730px){
     header{
@@ -101,5 +110,8 @@ footer{
     }
     header ul{
         display: none;
+    }
+    footer{
+        font-size: 15px;
     }
 }
